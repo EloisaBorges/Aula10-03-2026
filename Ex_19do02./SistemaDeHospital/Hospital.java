@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Hospital {
+    
+    private List<Medico> medicos;
+    private List<Paciente> pacientes;
+
+    public Hospital() {
+        medicos = new ArrayList<>();
+        pacientes = new ArrayList<>();
+    }
+
+    public void adicionarMedico(Medico medico) {
+        medicos.add(medico);
+    }
+
+    public void adicionarPaciente(Paciente paciente) {
+        pacientes.add(paciente);
+    }
+
+    public List<Medico> getMedicos() {
+        return medicos;
+    }
+
+    public List<Paciente> getPacientes() {
+        return pacientes;
+    }
+}
